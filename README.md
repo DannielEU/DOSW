@@ -36,6 +36,5 @@ Este repositorio contiene los trabajos, proyectos y prácticas desarrollados dur
 - **Monitoreo:** Prometheus + Grafana (básico)
 
 ---
-
-## 📁 Estructura del Repositorio
+Gracias
 
