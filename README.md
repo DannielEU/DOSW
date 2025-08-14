@@ -1,5 +1,5 @@
 # Desarrollo y Operaciones de Software
-## gato
+
 **Autor:** Daniel Eduardo Useche  
 **Materia:** Desarrollo y Operaciones de Software  
 **Universidad:** [Escuela de Ingenieros Julio Garavito]  
@@ -33,4 +33,3 @@ Este repositorio contiene los trabajos, proyectos y prácticas desarrollados dur
 - **Pruebas:** Jest, PyTest
 - **Automatización y scripts:** Bash, Make
 - **Infraestructura como código:** Terraform (opcional)
-### Hola sapa
