@@ -34,8 +34,3 @@ Este repositorio contiene los trabajos, proyectos y prácticas desarrollados dur
 - **Automatización y scripts:** Bash, Make
 - **Infraestructura como código:** Terraform (opcional)
 - **Monitoreo:** Prometheus + Grafana (básico)
-
----
-
-## 📁 Estructura del Repositorio
-
