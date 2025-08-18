@@ -1,8 +1,8 @@
 # Desarrollo y Operaciones de Software
 
 **Autores:** Daniel Eduardo Useche , Jared Farfan
-**Materia:** Desarrollo y Operaciones de Software  
-**Universidad:** Escuela de Ingenieros Julio Garavito
+**Materia:** Desarrollo y Operaciones de Software.
+**Universidad:** Escuela de Ingenieros Julio Garavito.
 **Periodo académico:** Ej. Segundo semestre 2025
 
 ---
