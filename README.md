@@ -1,9 +1,9 @@
 # Desarrollo y Operaciones de Software
 
 **Autores:** Daniel Eduardo Useche , Jared Farfan
-**Materia:** Desarrollo y Operaciones de Software  
-**Universidad:** [Escuela de Ingenieros Julio Garavito]  
-**Periodo académico:** [Ej. Segundo semestre 2025]
+**Materia:** Desarrollo y Operaciones de Software.
+**Universidad:** Escuela de Ingenieros Julio Garavito.
+**Periodo académico:** Ej. Segundo semestre 2025
 
 ---
 
@@ -32,4 +32,3 @@ Este repositorio contiene los trabajos, proyectos y prácticas desarrollados dur
 - **Orquestación:** Kubernetes (básico)
 - **Pruebas:** Jest, PyTest
 - **Automatización y scripts:** Bash, Make
-- **Infraestructura como código:** Terraform (opcional)
