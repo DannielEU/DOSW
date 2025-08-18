@@ -32,4 +32,3 @@ Este repositorio contiene los trabajos, proyectos y prácticas desarrollados dur
 - **Orquestación:** Kubernetes (básico)
 - **Pruebas:** Jest, PyTest
 - **Automatización y scripts:** Bash, Make
-- **Infraestructura como código:** Terraform (opcional)
