@@ -32,3 +32,17 @@ Este repositorio contiene los trabajos, proyectos y prácticas desarrollados dur
 - **Orquestación:** Kubernetes (básico)
 - **Pruebas:** Jest, PyTest
 - **Automatización y scripts:** Bash, Make
+
+---
+
+# Maratón Git 2025–2
+
+**Nombre de la rama:** feature/Farfanjared_UsecheDaniel_2025-2
+
+---
+
+# Retos Completados
+
+### Reto 1: Configuración y creación de rama
+**Evidencia:**
+![alt text](image.png)
