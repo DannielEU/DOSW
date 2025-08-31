@@ -19,4 +19,14 @@ public class CarreraParalela {
         resultado[1] = numero;
         return resultado;
     }
+
+    public int[] mayorMenorCantida(ArrayList<Integer> lista){
+        int[] resultado = new int[3];
+        int mayor = mayorNumero(lista);
+        int[] menorCantidad = menorNumero(lista);
+        resultado[0] = mayor;
+        resultado[1] = menorCantidad[0];
+        resultado[2] = menorCantidad[1];
+        return resultado;
+    }
 }
