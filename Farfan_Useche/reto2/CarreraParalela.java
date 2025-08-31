@@ -26,12 +26,18 @@ public class CarreraParalela {
         boolean divisorDeDos = divisorDeDos(mayor);
         int[] menorCantidad = menorNumero(lista);
         resultado[0] = mayor;
+        this.multiplode2(mayor);
         resultado[1] = menorCantidad[0];
         resultado[2] = menorCantidad[1];
         return resultado;
     }
 
-    public boolean divisorDeDos(int numero){
+    public boolean divisorDeDos(int numero) {
         return (2 % numero == 0) ? true : false;
+    }
+
+    private boolean multiplode2(int numero) {
+        boolean resultado = (numero % 2 == 0) ? true : false;
+        return resultado;
     }
 }
