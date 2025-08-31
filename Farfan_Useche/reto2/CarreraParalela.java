@@ -40,4 +40,8 @@ public class CarreraParalela {
         boolean resultado = (numero % 2 == 0) ? true : false;
         return resultado;
     }
+
+    public boolean cantidadInpar(ArrayList<Integer> lista){
+        return (lista.size() % 2 != 0)?true:false;
+    }
 }
