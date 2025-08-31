@@ -2,7 +2,7 @@ package Farfan_Useche.reto2;
 
 import java.util.*;
 
-public class CarrelaParalela {
+public class CarreraParalela {
     public static void main(String[] args) {
         System.out.println("Hola Mundo");
     }
