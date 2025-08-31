@@ -53,11 +53,13 @@ public class CarreraParalela {
         info.add("Mayor: " + mayor);
         info.add("¿El mayor es múltiplo de 2? " + multiplode2(mayor));
         info.add("¿El mayor es divisor de 2? " + divisorDeDos(mayor));
+        info.add("¿La lista el par? " + listaPar(lista));
+        info.add("¿La lista el impar? " + cantidadImpar(lista));
 
         return info;
     }
 
-    public boolean cantidadInpar(ArrayList<Integer> lista){
+    public boolean cantidadImpar(ArrayList<Integer> lista){
         return (lista.size() % 2 != 0)?true:false;
     }
 }
