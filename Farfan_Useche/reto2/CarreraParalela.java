@@ -40,6 +40,9 @@ public class CarreraParalela {
         boolean resultado = (numero % 2 == 0) ? true : false;
         return resultado;
     }
+    private boolean listaPar( ArrayList<Integer> lista){
+        return (lista.size() % 2 == 0) ? true : false;
+    }
     public List<String> informacionDeLista(ArrayList<Integer> lista) {
         List<String> info = new ArrayList<>();
 
