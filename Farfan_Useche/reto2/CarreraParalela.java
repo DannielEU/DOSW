@@ -40,4 +40,17 @@ public class CarreraParalela {
         boolean resultado = (numero % 2 == 0) ? true : false;
         return resultado;
     }
+    public List<String> informacionDeLista(ArrayList<Integer> lista) {
+        List<String> info = new ArrayList<>();
+
+        int mayor = mayorNumero(lista);
+        int menor = menorNumero(lista);
+        info.add("Lista: " + lista);
+        info.add("Menor: " + menor);
+        info.add("Mayor: " + mayor);
+        info.add("¿El mayor es múltiplo de 2? " + multiplode2(mayor));
+        info.add("¿El mayor es divisor de 2? " + divisorDeDos(mayor));
+
+        return info;
+    }
 }
