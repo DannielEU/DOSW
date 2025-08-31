@@ -23,10 +23,15 @@ public class CarreraParalela {
     public int[] mayorMenorCantida(ArrayList<Integer> lista){
         int[] resultado = new int[3];
         int mayor = mayorNumero(lista);
+        boolean divisorDeDos = divisorDeDos(mayor);
         int[] menorCantidad = menorNumero(lista);
         resultado[0] = mayor;
         resultado[1] = menorCantidad[0];
         resultado[2] = menorCantidad[1];
         return resultado;
+    }
+
+    public boolean divisorDeDos(int numero){
+        return (2 % numero == 0) ? true : false;
     }
 }
