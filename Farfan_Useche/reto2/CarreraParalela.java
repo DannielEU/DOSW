@@ -47,9 +47,9 @@ public class CarreraParalela {
         List<String> info = new ArrayList<>();
 
         int mayor = mayorNumero(lista);
-        int menor = menorNumero(lista);
+        int[] menor = menorNumero(lista);
         info.add("Lista: " + lista);
-        info.add("Menor: " + menor);
+        info.add("Menor: " + menor[1]);
         info.add("Mayor: " + mayor);
         info.add("¿El mayor es múltiplo de 2? " + multiplode2(mayor));
         info.add("¿El mayor es divisor de 2? " + divisorDeDos(mayor));
