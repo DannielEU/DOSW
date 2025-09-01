@@ -24,6 +24,6 @@ public class Reto3{
     }
 
     public String funcionesCombinadas(String str){
-        return buffer(repetirMensaje(str));
+        return repetirMensaje(buffer(str));
     }
 }
