@@ -1,9 +1,10 @@
 package Farfan_Useche.reto4;
 
-import java.util.Hashtable;
-
-
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.List;
 
 public class Reto4{
     private HashMap<String, Integer> map = new HashMap<>();
@@ -35,6 +36,12 @@ public class Reto4{
         for (String clave : tabla.keySet()) {
             combinado.put(clave, tabla.get(clave));
         }
+    }
+
+    public List<Integer> clavesAscendentes(HashMap<String , Integer> map){
+        List<Integer> valores = new ArrayList<>(map.values());
+        Collections.sort(valores);
+        return valores;
     }
 
 }
