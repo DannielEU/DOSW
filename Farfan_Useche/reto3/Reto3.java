@@ -6,7 +6,9 @@ import java.util.stream.IntStream;
 public class Reto3{
 
     public static void main(String[] args) {
-        System.out.println("Hola");
+        Reto3 reto3 = new Reto3();
+        System.out.println("hola");
+        System.out.println(reto3.funcionesCombinadas("hola"));
 
     }
 
