@@ -22,4 +22,15 @@ public class Reto5 {
         return filtrado;
     }
 
+    public TreeSet<Integer> procesarNumeros(int[] numerosEntrada) {
+        TreeSet<Integer> numeros = new TreeSet<>();
+
+
+        for (int num : numerosEntrada) {
+            numeros.add(num);
+        }
+        numeros.removeIf(n -> n % 5 == 0);
+
+        return numeros;
+    }
 }
