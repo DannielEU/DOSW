@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 public class Reto4{
     private HashMap<String, Integer> map = new HashMap<>();
+    private Hashtable<String, Integer> combinado = new Hashtable<>();
 
     public Hashtable<String, Integer> tabla = new Hashtable<>();
 
@@ -28,4 +29,13 @@ public class Reto4{
             this.map.put(s[0], Integer.parseInt(s[1]));
         }
     }
+    public void combinado() {
+        for (String clave : map.keySet()) {
+            combinado.put(clave, map.get(clave));
+        }
+        for (String clave : tabla.keySet()) {
+            combinado.put(clave, tabla.get(clave));
+        }
+    }
+
 }
