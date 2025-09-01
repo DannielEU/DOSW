@@ -37,5 +37,12 @@ public class Reto4{
             combinado.put(clave, tabla.get(clave));
         }
     }
+    public HashMap<String, Integer> clavesMayusculas(HashMap<String, Integer> original) {
+        HashMap<String, Integer> nuevo = new HashMap<>();
+        for (String clave : original.keySet()) {
+            nuevo.put(clave.toUpperCase(), original.get(clave));
+        }
+        return nuevo;
+    }
 
 }
