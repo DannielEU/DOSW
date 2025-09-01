@@ -16,7 +16,6 @@ public class Reto3{
         String repetido = IntStream.range(0, 3)
                 .mapToObj(i -> str)
                 .collect(Collectors.joining(" "));
-
         sb.append(repetido);
         return sb.toString();
     }
