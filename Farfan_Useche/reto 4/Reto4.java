@@ -11,11 +11,10 @@ public class Reto4 {
     public static void main(String[] args) {
         String[][] ejemplo1 = { {"a","1"}, {"c","3"}, {"b","999"} };
         String[][] ejemplo2 = { {"b","234"}, {"d","4"} ,{"z","34"}};
-
-        // Creamos una instancia
+        System.out.println(Arrays.deepToString(ejemplo1));
+        System.out.println(Arrays.deepToString(ejemplo2));
         Reto4 r = new Reto4();
 
-        // Usamos la instancia para llamar los métodos
         r.reto4(ejemplo1);
         r.almacernarHashtable(ejemplo2);
 
