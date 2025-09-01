@@ -28,14 +28,12 @@ public class Reto4{
         }
     }
 
-    public void combinado(){
-        for (Map.Entry<String, Integer> en : this.tabla.entrySet()) {
-            combinado.put(en.getKey(),en.getValue());
+    public void combinado() {
+        for (String clave : map.keySet()) {
+            combinado.put(clave, map.get(clave));
         }
-        for (Map.Entry<String, Integer> en : this.map.entrySet()) {
-            if (!map.containsKey(en.getKey()){
-                tabla.put(en.getKey(), en.getValue());
-            }
+        for (String clave : tabla.keySet()) {
+            combinado.put(clave, tabla.get(clave));
         }
     }
 
