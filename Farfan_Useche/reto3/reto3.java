@@ -1,6 +1,8 @@
 package Farfan_Useche.reto3;
 
-public class reto3{
+import java.util.stream.Collectors;
+
+public class Reto3{
 
     public static void main(String[] args) {
         System.out.println("Hola");
@@ -15,6 +17,13 @@ public class reto3{
         }
     }
     return sb.toString();
-}
+    }
 
+    public static String buffer(String texto) {
+        return new StringBuilder(texto).reverse().toString();
+    }
+
+    public String funcionesCombinadas(String str){
+        return buffer(repetirMensaje(str));
+    }
 }
