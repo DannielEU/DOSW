@@ -1,0 +1,28 @@
+# ========================
+# Archivos del sistema
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Archivos de IntelliJ IDEA
+# ========================
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ========================
+# Archivos de compilación (Maven/Gradle)
+# ========================
+target/
+build/
+out/
+
+# ========================
+# Logs y temporales
+# ========================
+*.log
+*.class
+*.tmp
+*.swp
