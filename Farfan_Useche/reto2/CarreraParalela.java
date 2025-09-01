@@ -45,7 +45,6 @@ public class CarreraParalela {
     }
     public List<String> informacionDeLista(ArrayList<Integer> lista) {
         List<String> info = new ArrayList<>();
-
         int mayor = mayorNumero(lista);
         int[] menor = menorNumero(lista);
         info.add("Lista: " + lista);
