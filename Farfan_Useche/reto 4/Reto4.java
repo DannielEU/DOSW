@@ -1,18 +1,26 @@
 package Farfan_Useche.reto4;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
-public class Reto4{
+public class Reto4 {
     private HashMap<String, Integer> map = new HashMap<>();
     private Hashtable<String, Integer> tabla = new Hashtable<>();
-    private HashMap<String, Integer> combinado = new HashMap<>();
+    private Map<String, Integer> combinado = new HashMap<>();
 
     public static void main(String[] args) {
-        System.out.println("Hola");
+        String[][] ejemplo1 = { {"a","1"}, {"c","3"}, {"b","999"} };
+        String[][] ejemplo2 = { {"b","234"}, {"d","4"} ,{"z","34"}};
+
+        // Creamos una instancia
+        Reto4 r = new Reto4();
+
+        // Usamos la instancia para llamar los métodos
+        r.reto4(ejemplo1);
+        r.almacernarHashtable(ejemplo2);
+
+        r.combinado = r.combinador();
+        System.out.println(r.combinado);
     }
 
     public void almacernarHashtable(String[][] claveValor){
@@ -22,26 +30,30 @@ public class Reto4{
             }
         }
     }
-    
     public void reto4(String[][] args){
         for (String[] s : args) {
-            this.map.put(s[0], Integer.parseInt(s[1]));
+            if (!this.map.containsKey(s[0])) {
+                this.map.put(s[0], Integer.parseInt(s[1]));
+            }
         }
     }
-
-    public void combinado() {
+    public Map<String, Integer> combinador() {
         for (String clave : map.keySet()) {
-            combinado.put(clave, map.get(clave));
+            combinado.put(clave.toUpperCase(), map.get(clave));
         }
         for (String clave : tabla.keySet()) {
-            combinado.put(clave, tabla.get(clave));
+            combinado.remove(clave);
+            combinado.put(clave.toUpperCase(), tabla.get(clave));
+
         }
-    }
-
-    public List<Integer> clavesAscendentes(HashMap<String , Integer> map){
-        List<Integer> valores = new ArrayList<>(map.values());
-        Collections.sort(valores);
-        return valores;
-    }
-
+        return combinado.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByKey())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (e1, e2) -> e1,
+                        LinkedHashMap::new
+                ));
+        }
 }
