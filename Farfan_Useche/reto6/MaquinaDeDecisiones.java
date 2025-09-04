@@ -10,6 +10,10 @@ public class MaquinaDeDecisiones {
         comandos.put("DESPEDIR", new DespedirComando());
         comandos.put("CANTAR", new CantarComando());
         comandos.put("DANZAR", new DanzarComando());
+        comandos.put("BROMEAR", new BromearComando());
+        comandos.put("GRITAR", new GritarComando());
+        comandos.put("SUSURRAR", new SusurrarComando());
+        comandos.put("ANALIZAR", new AnalizarComando());
     }
     public void ejecutarComando(String comando) {
         switch (comando) {
