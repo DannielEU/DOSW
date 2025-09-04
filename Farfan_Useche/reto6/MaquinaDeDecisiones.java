@@ -7,10 +7,12 @@ public class MaquinaDeDecisiones {
 
     public MaquinaDeDecisiones() {
     }
-
     public void ejecutarComando(String comando) {
-        // Switch opcional (como pide el reto)
         switch (comando) {
+            case "BROMEAR":
+            case "GRITAR":
+            case "SUSURRAR":
+            case "ANALIZAR":
                 comandos.get(comando).ejecutar();
                 break;
             default:

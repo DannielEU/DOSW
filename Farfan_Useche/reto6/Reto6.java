@@ -1,4 +1,5 @@
-package Farfan_Useche.Reto6;
+package Farfan_Useche.reto6;
+
 
 import java.util.Arrays;
 import java.util.HashSet;
